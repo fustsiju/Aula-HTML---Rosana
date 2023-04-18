@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styled.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+    <div class="base">
+        <h1 style="text-align: center;">Formulário</h1>
+        <form method="post" action="mailto:fulviost@gmai.com">
+            <p style="margin-left: 10px;"><label for="cNome">Nome:</label>
+            <input type="text" name="txtnome" id="cNome" size="45" maxlength="45" placeholder="Digite seu nome completo">
+        </p>
+            <p style="margin-top: 10%; margin-left: 10px;"><label for="cSenha">Senha:</label>
+            <input type="password" name="txtsenha" id="cSenha" size="8" maxlength="8"></p>
+            
+            <fieldset id="sexo" style="margin-top: 10%;">
+            <legend>Sexo:</legend>
+            <input type="radio" name="txtsexo" id="cMasc">
+            <label for="cMasc" style="margin-left: 10px">Masculino</label>    
+            <input type="radio" name="txtsexo" id="cMasc">
+            <label for="cMasc" style="margin-left: 10px">Feminino</label> 
+            <input type="radio" name="txtsexo" id="cMasc">
+            <label for="cMasc" style="margin-left: 10px">Não informar</label> 
+            </fieldset>
+            <p style="margin-left: 20px;"> Mensagem <textarea cols="45" rows="5"></textarea></p>
+            <p>
+                <input type="checkbox" name="txtRecEmail" id="cRecEmail" checked />
+                Gostaria de receber email sobre as notícias
+            </p>
+            <div class="submit">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+            
+            
+
+        </form>
+    </div>
+    </div>
+</body>
+</html>
